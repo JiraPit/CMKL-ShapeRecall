@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Shape Recall</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- universal home button -->
+    <button id="homeBtn" class="btn home-btn">🏠</button>
+
+    <!-- HOME SCREEN -->
+    <div id="home" class="screen active">
+      <div class="shapes-header">
+        <div class="shape square green"></div>
+        <div class="shape triangle pink"></div>
+        <div class="shape circle blue"></div>
+      </div>
+      <h1>Shape Recall</h1>
+      <button id="startBtn" class="btn start-btn">START</button>
+    </div>
+
+    <!-- MEMORY SCREEN -->
+    <div id="memory" class="screen">
+      <h1>Level 1</h1>
+      <div class="pattern-container"></div>
+      <div class="progress-bar"><div class="progress"></div></div>
+    </div>
+
+    <!-- INPUT SCREEN -->
+    <div id="input" class="screen">
+      <h1>Level 1</h1>
+      <div class="input-container">
+        <div id="answerContainer" class="answer-container"></div>
+        <button id="submitBtn" class="btn send-btn">➔</button>
+      </div>
+      <div class="controls">
+        <button class="shape-btn square-btn"></button>
+        <button class="shape-btn circle-btn"></button>
+        <button class="shape-btn triangle-btn"></button>
+        <button class="shape-btn star-btn"></button>
+        <button class="shape-btn backspace-btn">⌫</button>
+      </div>
+      <div class="color-picker">
+        <button class="color pink selected"></button>
+        <button class="color green"></button>
+        <button class="color blue"></button>
+      </div>
+      <p id="notification" class="notification"></p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
